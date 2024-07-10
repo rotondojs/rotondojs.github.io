@@ -14,6 +14,9 @@
             background-color: #333;
             color: #fff;
             padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         } 
       
         main {
@@ -21,18 +24,32 @@
         }
 
         body {
-            background-color: #31369b;
-            color: #030303; /* Ensure text is visible on the background color */
+            background-color: #FF474C;
+            color: #fff; /* Ensure text is visible on the background color */
+        }
+
+        .resume-link {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+        }
+
+        .resume-link:hover {
+            background-color: #fff;
+            color: #333;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>New Header</h1>
+        <h1>Header</h1>
+        <a class="resume-link" href="John Rotondo Northeastern Resume (1).pdf" target="_blank">View My Resume</a>
     </header>
     
     <main>
-        <h1>Hi my name is John Rotondo!</h1>
+        <h1>Hi, my name is John Rotondo!</h1>
         <p>I'm a student at Northeastern University studying computer science and business</p>
         <p>...</p>
     </main>
