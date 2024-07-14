@@ -28,7 +28,7 @@
 
         .sidebar {
             position: fixed;
-            top: 0;
+            bottom: 0;
             left: 0;
             width: 70px;
             height: 100%;
@@ -36,11 +36,12 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-top: 100px; /* Push the links down */
+            justify-content: flex-end; /* Align links at the bottom */
+            padding-bottom: 20px; /* Space from the bottom */
         }
 
         .sidebar a {
-            margin: 20px 0;
+            margin: 10px 0; /* Bring the links closer together */
             text-align: center;
         }
 
@@ -131,7 +132,7 @@
     </header>
 
     <div class="sidebar">
-        <a href="https://www.linkedin.com/in/john-s-rotondo-0540a5229/" target="_blank">
+        <a href="https://www.linkedin.com/in/johnrotondo" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
         </a>
         <a href="https://github.com/rotondojs" target="_blank">
