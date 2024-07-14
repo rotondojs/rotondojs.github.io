@@ -20,16 +20,36 @@
             align-items: center;
         }
 
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 100%;
+            background-color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            margin: 20px 0;
+        }
+
+        .sidebar img {
+            width: 30px;
+            height: 30px;
+        }
+
         main {
-            margin: 100px 50px 20px 50px;
+            margin: 100px 50px 20px 100px;
             /* add some margin to the top of the main content */
             text-align: center;
             /* Center text within the main content */
-            margin-top: 400px;
         }
 
         body {
-            margin: 100px 100px 20px 100px;
             background-color: #08638d;
             color: #ffffff;
             /* Ensure text is visible on the background color */
@@ -52,7 +72,7 @@
         }
 
         section {
-            margin: 100px 100px 500px 100px;
+            padding: 40px;
             text-align: center;
             /* Center text within each section */
             margin: 0 100px;
@@ -61,7 +81,7 @@
         }
 
         subsection {
-            margin-top: 300px;
+            margin-top: 20px;
         }
 
         subsection h2 {
@@ -75,12 +95,15 @@
         }
 
         h1 {
-            font-size: 2.5em; /* Ensure all h1 headers are the same size */
-            text-decoration: underline; /* Underline the h1 headers */
+            font-size: 2.5em;
+            /* Ensure all h1 headers are the same size */
+            text-decoration: underline;
+            /* Underline the h1 headers */
         }
 
         h2 {
-            font-size: 2em; /* Adjust the size for h2 headers if needed */
+            font-size: 2em;
+            /* Adjust the size for h2 headers if needed */
         }
 
         h3 {
@@ -105,6 +128,15 @@
         <h3>John Rotondo</h3>
         <a class="resume-link" href="John Rotondo Northeastern Resume (1).pdf" target="_blank">View My Resume</a>
     </header>
+
+    <div class="sidebar">
+        <a href="https://www.linkedin.com/in/johnrotondo" target="_blank">
+            <img src="https://image.shutterstock.com/image-vector/linkedin-icon-logo-vector-260nw-1239284883.jpg" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/rotondojs" target="_blank">
+            <img src="https://image.shutterstock.com/image-vector/github-icon-logo-vector-260nw-1239284887.jpg" alt="GitHub">
+        </a>
+    </div>
 
     <main>
         <h1>About Me</h1>
