@@ -8,57 +8,24 @@
     <!-- CSS styles -->
     <style>
         body {
-            background-color: #4682b4;
+            background-color: #08638d;
             color: #ffffff;
-            margin: 0;
-            font-family: Arial, sans-serif;
+            margin-left: 70px; /* Adjust the body margin to accommodate the sidebar */
+            font-family: Arial, sans-serif; /* Set font to Arial */
         }
 
         header {
             position: fixed;
             top: 0;
-            left: 0;
-            width: 100%;
-            background-color: #85929e;
+            left: 70px; /* Adjust the header position to accommodate the sidebar */
+            width: calc(100% - 85px); /* Adjust the width of the header */
+            background-color: #333;
             color: #fff;
             padding: 10px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-family: Arial, sans-serif;
-        }
-
-        .header-left {
-            flex: 1;
-        }
-
-        .header-middle {
-            flex: 2;
-            text-align: center;
-        }
-
-        .header-right {
-            flex: 1;
-            text-align: right;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-        }
-
-        .header-right a {
-            margin-left: 10px;
-            display: inline-block;
-        }
-
-        .header-right img {
-            width: 40px;
-            height: 40px;
-            object-fit: contain;
-        }
-
-        main {
-            margin: 100px 50px 20px 50px;
-            text-align: center;
+            padding-left: 20px; /* Move content to the left */
         }
 
         .resume-link {
@@ -67,53 +34,91 @@
             padding: 10px;
             border: 1px solid #fff;
             border-radius: 5px;
-            font-family: Arial, sans-serif;
+            margin-left: 20px; /* Adjust this value to move the link to the left */
+            font-family: Arial, sans-serif; /* Set font to Arial */
         }
 
-        .resume-link:hover {
-            background-color: #fff;
-            color: #333;
+        .sidebar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 70px;
+            height: 100%;
+            background-color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end; /* Align links at the bottom */
+            padding-bottom: 20px; /* Space from the bottom */
+            font-family: Arial, sans-serif; /* Set font to Arial */
+        }
+
+        .sidebar a {
+            margin: 10px 0; /* Bring the links closer together */
+            text-align: center;
+            font-family: Arial, sans-serif; /* Set font to Arial */
+        }
+
+        .sidebar img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain; /* Maintain aspect ratio */
+        }
+
+        main {
+            margin: 100px 50px 20px 50px;
+            /* add some margin to the top of the main content */
+            text-align: center;
+            /* Center text within the main content */
+            font-family: Arial, sans-serif; /* Set font to Arial */
         }
 
         section {
             padding: 40px;
             text-align: center;
+            /* Center text within each section */
             margin: 0 100px;
             margin-top: 300px;
             margin-bottom: 200px;
-            font-family: Arial, sans-serif;
+            font-family: Arial, sans-serif; /* Set font to Arial */
         }
 
         subsection {
             margin-top: 50px;
-            font-family: Arial, sans-serif;
+            font-family: Arial, sans-serif; /* Set font to Arial */
         }
 
         subsection h2 {
             text-align: center;
-            font-family: Arial, sans-serif;
+            /* Center text within each subsection */
+            font-family: Arial, sans-serif; /* Set font to Arial */
         }
 
         subsection p {
             text-align: left;
-            font-family: Arial, sans-serif;
+            /* Center text within each subsection */
+            font-family: Arial, sans-serif; /* Set font to Arial */
         }
 
         h1 {
             font-size: 2.5em;
-            font-family: Arial, sans-serif;
+            /* Ensure all h1 headers are the same size */
+            text-decoration: underline;
+            /* Underline the h1 headers */
+            font-family: Arial, sans-serif; /* Set font to Arial */
         }
 
         h2 {
             font-size: 2em;
-            font-family: Arial, sans-serif;
+            /* Adjust the size for h2 headers if needed */
+            font-family: Arial, sans-serif; /* Set font to Arial */
         }
 
         h3 {
             font-size: 2.5em;
             text-decoration: underline;
             margin: 10px 20px 20px 20px;
-            font-family: Arial, sans-serif;
+            font-family: Arial, sans-serif; /* Set font to Arial */
         }
 
         img {
@@ -123,32 +128,29 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            font-family: Arial, sans-serif;
+            font-family: Arial, sans-serif; /* Set font to Arial */
         }
     </style>
 </head>
 
 <body>
     <header>
-        <div class="header-left">
-            <h3>John S. Rotondo</h3>
-        </div>
-        <div class="header-middle">
-            <a class="resume-link" href="John Rotondo Northeastern Resume(2).pdf" target="_blank">View Resume</a>
-        </div>
-        <div class="header-right">
-            <a href="https://www.linkedin.com/in/john-s-rotondo-0540a5229/" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
-            </a>
-            <a href="https://github.com/rotondojs" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
-            </a>
-        </div>
+        <h3>John Rotondo</h3>
+        <a class="resume-link" href="John Rotondo Northeastern Resume (1).pdf" target="_blank">View Resume</a>
     </header>
+
+    <div class="sidebar">
+        <a href="https://www.linkedin.com/in/john-s-rotondo-0540a5229/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/rotondojs" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        </a>
+    </div>
 
     <main>
         <h1>About Me</h1>
-        <img src="" alt="John Rotondo">
+        <img src="IMG_6088.jpg" alt="John Rotondo">
         <p>Hello! My name is John Rotondo, and I am currently pursuing a Bachelor of Science degree in Computer Science and Business at Northeastern University's Khoury College of Computer Sciences, 
             with an expected graduation date of May 2025. My academic journey has been complemented by my time at the NUin New College of the Humanities in London, 
             where I broadened my educational and cultural horizons.</p>
@@ -176,13 +178,13 @@
         </subsection>
         <subsection>
             <h2>Project 3</h2>
-            <p>Description</p>
+            <p>discription</p>
         </subsection>
     </section>
 
     <section id="experience">
         <h1>Experiences</h1>
-        <p>Description</p>
+        <p>discription</p>
         <subsection>
             <h2>Desktop Engineer, Alkermes, Waltham, MA</h2>
             <p>Helped integrate Windows 11 company-wide rollout by testing Windows applications and resources; used Powershell to pull employee information from the company database to create informative spreadsheets.
@@ -190,7 +192,7 @@
         </subsection>
         <subsection>
             <h2>Lead Camp Counselor, DEAN Adventure Camps, Washington DC </h2>
-            <p>Description</p>
+            <p>discription</p>
         </subsection>
         <subsection>
             <h2>Busser, The Charlie Noble Restaurant, Nantucket, MA</h2>
