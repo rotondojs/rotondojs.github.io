@@ -1,29 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Rotondo's Portfolio</title>
-    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- CSS styles -->
     <style>
-        /* General Reset */
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-
         body {
             background-color: #f4f4f4;
             color: #333;
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
-            margin: 0;
         }
-
         header {
             position: fixed;
             top: 0;
@@ -37,32 +30,25 @@
             align-items: center;
             z-index: 1000;
         }
-
         .header-left h3 {
             font-size: 1.6em;
-            margin: 0;
         }
-
         .header-middle {
             flex: 1;
             text-align: center;
         }
-
         .header-right {
             display: flex;
             gap: 15px;
         }
-
         .header-right a img {
             width: 30px;
             height: 30px;
             transition: transform 0.3s ease;
         }
-
         .header-right a img:hover {
             transform: scale(1.1);
         }
-
         .resume-link {
             color: #fff;
             text-decoration: none;
@@ -71,12 +57,10 @@
             border-radius: 5px;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
-
         .resume-link:hover {
             background-color: #fff;
             color: #333;
         }
-
         main {
             margin: 100px 50px 20px 50px;
             padding: 20px;
@@ -84,17 +68,14 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
         h1 {
             text-align: center;
             font-size: 2em;
             margin-bottom: 20px;
         }
-
         section {
             padding: 20px 0;
         }
-
         section h2 {
             font-size: 1.5em;
             margin-bottom: 15px;
@@ -102,13 +83,6 @@
             display: inline-block;
             padding-bottom: 5px;
         }
-
-        section p,
-        subsection p {
-            margin-bottom: 15px;
-            text-align: left;
-        }
-
         img {
             max-width: 100%;
             height: auto;
@@ -116,7 +90,6 @@
             margin: 20px auto;
             border-radius: 8px;
         }
-
         footer {
             background-color: #2c3e50;
             color: #fff;
@@ -124,69 +97,20 @@
             padding: 15px 0;
             margin-top: 40px;
         }
-
-        /* Grid Layout for Projects and Experience */
-        .grid-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin-top: 20px;
-        }
-
-        .grid-container subsection {
-            background-color: #ecf0f1;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        .grid-container h2 {
-            font-size: 1.2em;
-            margin-bottom: 10px;
-        }
-
-        .grid-container p {
-            font-size: 0.9em;
-            line-height: 1.5;
-        }
-
-        .grid-container a {
-            color: #2980b9;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .grid-container a:hover {
-            text-decoration: underline;
-        }
-
         @media (max-width: 768px) {
-            .grid-container {
-                grid-template-columns: 1fr;
-            }
-
             header {
                 flex-direction: column;
                 text-align: center;
             }
-
-            .header-left,
-            .header-middle,
-            .header-right {
-                margin-bottom: 10px;
-            }
-
             .header-right {
                 justify-content: center;
             }
-
             main {
                 margin: 80px 20px;
             }
         }
     </style>
 </head>
-
 <body>
     <header>
         <div class="header-left">
@@ -204,52 +128,42 @@
             </a>
         </div>
     </header>
-
     <main>
         <h1>About Me</h1>
         <img src="your-image-url.jpg" alt="John Rotondo">
         <p>Hello! I'm currently pursuing a Bachelor of Science in the Khoury College of Computer Sciences at Northeastern University with an expected graduation date of May 2025. My academic journey has been complemented by a semester in the NUin New College of the Humanities in London.</p>
         <p>My technical proficiencies include languages such as Java, Python, SQL, HTML, and Powershell, as well as software tools like Tableau, GitHub, Squarespace, Docker, ServiceNow, and AppSmith.</p>
         <p>Outside of my academic and professional pursuits, I'm involved in sports and team activities as a member of the Alpha Kappa Sigma Fraternity, Stinky Socks hockey league, intramural soccer, tennis, and golf. These activities have not only been a source of enjoyment but have also helped me develop teamwork and leadership skills.</p>
-
         <section id="projects">
             <h2>Projects</h2>
-            <div class="grid-container">
-                <subsection>
-                    <h2>Designed Database & App</h2>
-                    <p>Helped design an app and database to record, suggest, and rate books and media based on user preferences. Used Docker to create and run containers, connecting AppSmith to the MySQL database.</p>
-                    <p><a href="https://github.com/rotondojs/S24--Marks-Minions" target="_blank">View Project</a></p>
-                </subsection>
-                <subsection>
-                    <h2>Image Processor</h2>
-                    <p>Developed a GUI application displaying altered images. Worked with pixels and created each filter from scratch using loops to process every pixel in an image. Researched algorithms to speed up the image altering process and RGB values for pixels for certain filters.</p>
-                </subsection>
-            </div>
+            <subsection>
+                <h2>Designed Database & App</h2>
+                <p>Helped design an app and database to record, suggest, and rate books and media based on user preferences. Used Docker to create and run containers, connecting AppSmith to the MySQL database.</p>
+                <p><a href="https://github.com/rotondojs/S24--Marks-Minions" target="_blank">View Project</a></p>
+            </subsection>
+            <subsection>
+                <h2>Image Processor</h2>
+                <p>Developed a GUI application displaying altered images. Worked with pixels and created each filter from scratch using loops to process every pixel in an image. Researched algorithms to speed up the image altering process and RGB values for pixels for certain filters.</p>
+            </subsection>
         </section>
-
         <section id="experience">
             <h2>Experiences</h2>
-            <div class="grid-container">
-                <subsection>
-                    <h2>Desktop Engineer, Alkermes, Waltham, MA</h2>
-                    <p>Helped integrate Windows 11 company-wide rollout by testing Windows applications and resources; used Powershell to pull employee information from the company database to create informative spreadsheets. Created installation and use manuals for software development applications; analyzed spreadsheets with application activity to identify causes of internet disruption.</p>
-                </subsection>
-                <subsection>
-                    <h2>Lead Counselor, DEAN Adventure, Washington DC</h2>
-                    <p>Led a team of counselors and organized various adventure activities. Ensured safety and engagement for all participants.</p>
-                </subsection>
-                <subsection>
-                    <h2>Trend Analysis, EC, Washington DC</h2>
-                    <p>Assisted with data analysis and trend forecasting for a small startup. Contributed to market research and strategy development.</p>
-                </subsection>
-            </div>
+            <subsection>
+                <h2>Desktop Engineer, Alkermes, Waltham, MA</h2>
+                <p>Helped integrate Windows 11 company-wide rollout by testing Windows applications and resources; used Powershell to pull employee information from the company database to create informative spreadsheets. Created installation and use manuals for software development applications; analyzed spreadsheets with application activity to identify causes of internet disruption.</p>
+            </subsection>
+            <subsection>
+                <h2>Lead Counselor, DEAN Adventure, Washington DC</h2>
+                <p>Led a team of counselors and organized various adventure activities. Ensured safety and engagement for all participants.</p>
+            </subsection>
+            <subsection>
+                <h2>Trend Analysis, EC, Washington DC</h2>
+                <p>Assisted with data analysis and trend forecasting for a small startup. Contributed to market research and strategy development.</p>
+            </subsection>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2024 John S. Rotondo. All Rights Reserved.</p>
     </footer>
 </body>
-
 </html>
-
